@@ -27,6 +27,13 @@ app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/", router);
 
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://flipkart-mern-stack-clone.vercel.app');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
+
 const userName = process.env.DB_USERNAME;
 const password = process.env.DB_PASSWORD;
 
