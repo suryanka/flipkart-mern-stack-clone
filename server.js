@@ -37,10 +37,10 @@ connection(url);
 if(process.env.NODE_ENV === 'production'){
   app.use(express.static('client/build'));
 }
-
+const HOST = '0.0.0.0'; 
 const port = process.env.port || 8000;
 
-app.listen(port, () => {
+app.listen(port,HOST, () => {
   console.log(`Server is running successfully on port ${port}`);
 });
 Defaultdata();
