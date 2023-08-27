@@ -14,7 +14,7 @@ import {v4 as uuid} from 'uuid';
 const app = express();
 
 const corsOptions = {
-  origin: "https://flipkart-mern-stack-clone.vercel.app/",
+  origin: "https://flipkart-mern-stack-clone.vercel.app",
   methods: ["POST", "GET"],
   credentials: true,
   //access-control-allow-credentials:true
