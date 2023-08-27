@@ -34,10 +34,10 @@ app.use((req, res, next) => {
   next();
 });
 
-const userName = process.env.DB_USERNAME;
-const password = process.env.DB_PASSWORD;
+const userName = process.env.MONGO_USERNAME;
+const password = process.env.MONGO_PASSWORD;
 
-const url = process.env.MONGODB_URI || `mongodb+srv://${userName}:${password}@flipkartclone.79pb8by.mongodb.net/FlipkartClone?retryWrites=true&w=majority`;
+const url =`mongodb+srv://${userName}:${password}@flipkartclone.79pb8by.mongodb.net/FlipkartClone?retryWrites=true&w=majority`;
 
 connection(url);
 
