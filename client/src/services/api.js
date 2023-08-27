@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url='';
+const url='https://flipkart-mern-stack-clone-59fb-backend.vercel.app';
 // http://localhost:8000';
 
 export const authenticateSignUp= async (data)=>{
