@@ -1,7 +1,7 @@
 import axios from "axios";
 import * as actiontypes from "../constants/productConstant";
 
-const url ="";
+const url ="https://flipkart-mern-stack-clone-59fb-backend.vercel.app/";
 //  "http://localhost:8000";
 
 export const getProducts = () => async (dispatch) => {
